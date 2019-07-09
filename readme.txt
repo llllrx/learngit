@@ -1,5 +1,5 @@
-Git is a distributed  version control system.
-Git is free software.
+Git is a distributed version control system.
+Git is free software distributed under the GPL.
 
 git init //初始化一个库
 git add readme.txt  //添加文件
