@@ -19,7 +19,7 @@ git reset HEAD readme.txt      //去除已经加入到缓存区域的文件修�
                                 再用上一条命令去除工作区修改
 git rm test.txt     //从库里面删除文件（需要提交确认后才会真正删除）
 git remote add origin git@server-name:path/repo-name.git；   //关联远程仓库
-git push origin master     //命令，实际上是把当前分支master推送到远程。
+git push origin 分支名     //将分支推送到远程。
 git clone https://github.com/llllrx/gitskills.git       //将远程仓库克隆到本地
 
 git branch dev      //创建dev分支
@@ -33,5 +33,24 @@ git stash list          //查看保存的工作现场列表
 git stash apply         //恢复之前的工作内容
 git stash drop          //删除列表里面的保存的现场
 git stash pop           //恢复工作现场，并且删除保存的内容
+git tag -d v0.1         //删除标签
+
+git tag <name>就可以打一个新标签，后面可加版本号，指定某一次提交的标签
+git tag 可以查看所有标签
+
+因此，多人协作的工作模式通常是这样：
+
+首先，可以试图用git push origin <branch-name>推送自己的修改；
+
+如果推送失败，则因为远程分支比你的本地更新，需要先用git pull试图合并；
+
+如果合并有冲突，则解决冲突，并在本地提交；
+
+没有冲突或者解决掉冲突后，再用git push origin <branch-name>推送就能成功！
+
+如果git pull提示no tracking information，则说明本地分支和远程分支的链接关系没有创建，用命令git branch --set-upstream-to <branch-name> origin/<branch-name>。
+
+这就是多人协作的工作模式，一旦熟悉了，就非常简单。
+
 
 Creating a new branch is quick and simple.
