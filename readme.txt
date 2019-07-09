@@ -26,6 +26,12 @@ git branch dev      //创建dev分支
 git git checkout dev    //切换到dev分支
 git checkout -b dev     //创建并切换到分支
 git merge dev           //合并dev分支到当前分支
-git branch -d dev       //删除分支dev
+git branch -d dev       //删除分支dev，当使用-D的时候，能强制删除
+git merge --no-ff -m "merge with no-ff" dev     //合并分支，禁用Fast Forward
+git stash           //将工作现场在不用提交保存的情况下，保存起来
+git stash list          //查看保存的工作现场列表
+git stash apply         //恢复之前的工作内容
+git stash drop          //删除列表里面的保存的现场
+git stash pop           //恢复工作现场，并且删除保存的内容
 
 Creating a new branch is quick and simple.
