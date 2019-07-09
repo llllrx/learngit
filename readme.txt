@@ -18,4 +18,10 @@ git checkout -- readme.txt     //去除文件在工作区的修改，截止至�
 git reset HEAD readme.txt      //去除已经加入到缓存区域的文件修改
                                 再用上一条命令去除工作区修改
 git rm test.txt     //从库里面删除文件（需要提交确认后才会真正删除）
+git remote add origin git@server-name:path/repo-name.git；   //关联远程仓库
 git push origin master     //命令，实际上是把当前分支master推送到远程。
+git clone https://github.com/llllrx/gitskills.git       //将远程仓库克隆到本地
+
+git branch dev      //创建dev分支
+git git checkout dev    //切换到dev分支
+git checkout -b dev     //创建并切换到分支
