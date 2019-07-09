@@ -28,4 +28,4 @@ git checkout -b dev     //创建并切换到分支
 git merge dev           //合并dev分支到当前分支
 git branch -d dev       //删除分支dev
 
-创建一个分支贼快
+Creating a new branch is quick AND simple.
