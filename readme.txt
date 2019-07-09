@@ -25,3 +25,5 @@ git clone https://github.com/llllrx/gitskills.git       //将远程仓库克隆�
 git branch dev      //创建dev分支
 git git checkout dev    //切换到dev分支
 git checkout -b dev     //创建并切换到分支
+
+创建一个分支贼快
